@@ -1,15 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr 12 19:21:39 2023
-
-@author: hp
-"""
-
 from flask import Flask, render_template, request
 import numpy as np
 import pickle
 
-model = pickle.load(open('C:/Users/ATHISH/Downloads/model.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
 app = Flask(__name__)
 
 @app.route("/")
